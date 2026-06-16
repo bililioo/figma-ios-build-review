@@ -1,0 +1,20 @@
+[
+  {
+    "name": "build_from_figma",
+    "prompt": "Use $figma-ios-build-review to implement this Figma frame as a UIKit screen. Figma: https://www.figma.com/design/FILE_KEY/App?node-id=12-34. Target: SettingsViewController populated state. Use the existing SnapKit patterns and make it reachable through the existing harness route.",
+    "expected_mode": "Build From Figma",
+    "must_include": ["Figma MCP read", "UIKit/SnapKit implementation", "live simulator screenshot", "Evidence Packet"]
+  },
+  {
+    "name": "review_existing_ui",
+    "prompt": "Use $figma-ios-build-review to compare the existing ProfileHeaderView against this Figma node and polish spacing, typography, and icon assets. Navigation is covered by .harness/flows/profile.yaml.",
+    "expected_mode": "Review Existing UI",
+    "must_include": ["committed Maestro flow", "Lookin hierarchy inspection", "accepted runtime data differences", "verification commands"]
+  },
+  {
+    "name": "static_review_blocked",
+    "prompt": "Use $figma-ios-build-review to review this UIKit code snippet against a screenshot. I do not have a runnable app target in this repo.",
+    "expected_mode": "Static review only",
+    "must_include": ["visual acceptance blocked", "no claim of complete live review", "residual risk"]
+  }
+]

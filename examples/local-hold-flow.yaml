@@ -1,0 +1,17 @@
+appId: <bundle-id>
+---
+- launchApp:
+    permissions:
+      photos: allow
+      usertracking: allow
+- tapOn:
+    text: "Allow"
+    optional: true
+- tapOn:
+    id: "<entry.accessibilityIdentifier>"
+- assertVisible:
+    id: "<target.accessibilityIdentifier>"
+- extendedWaitUntil:
+    visible:
+      id: "__hold_for_lookin__"
+    timeout: 120000

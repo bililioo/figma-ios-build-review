@@ -1,0 +1,23 @@
+{
+  "name": "figma-ios-build-review",
+  "display_name": "Figma iOS Build Review",
+  "description": "Build or review UIKit screens from Figma with Maestro, Lookin, simulator screenshots, and a reproducible Evidence Packet.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "chenbin",
+  "repository": "https://github.com/bililioo/figma-ios-build-review",
+  "keywords": [
+    "figma",
+    "ios",
+    "uikit",
+    "snapkit",
+    "maestro",
+    "lookin",
+    "visual-review"
+  ],
+  "skills": [
+    {
+      "path": "SKILL.md"
+    }
+  ]
+}
