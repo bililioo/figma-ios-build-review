@@ -1,4 +1,4 @@
 interface:
-  display_name: "Figma iOS Build Review"
+  display_name: "figma-ios-build-review"
   short_description: "Build or review UIKit screens from Figma"
   default_prompt: "Use $figma-ios-build-review to build or review this UIKit screen from its Figma node."
